@@ -1,0 +1,241 @@
+.cover {
+    width: 1920px;
+    height: 1080px;
+    background: url("../Pictures/Backdrop.jpg") no-repeat center fixed;
+    background-size: cover;
+    z-index: -3;
+}
+
+
+body {
+  background-color: #121212;
+}
+
+.white {
+    background-color: white;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    top: -1080px;
+}
+
+#clock {
+  color: white;
+  font-size: 112px;
+    padding-left: 575px;
+  padding-top: 325px;
+  padding-bottom: 40px;
+    z-index: -2;
+}
+
+.flash {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    filter: invert(0);
+    transition: 0.4s;
+    
+}
+
+.flash:hover {
+    filter: invert(1);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.camera {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 1120px;
+    top: 600px;
+    background-color: white;
+    z-index: 0;
+}
+
+#redbox {
+    z-index:-1;
+}
+
+#bluebox {
+    z-index: 1;
+}
+
+p {
+    font-size: 69px;
+    font-family: serif;
+}
+
+.i {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    opacity: 0;
+}
+
+.am {
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    opacity: 0;
+}
+
+.blind {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    opacity: 0;
+}
+
+.dot1 {
+  height: 100px;
+  width: 100px;
+  left: 200px;
+  top: 450px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+.dot2 {
+  height: 50px;
+  width: 50px;
+  left: 350px;
+  top: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+    position: absolute;
+}
+
+.dot3 {
+  height: 75px;
+  width: 75px;
+  left: 450px;
+  top: 220px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+.dot4 {
+  height: 50px;
+  width: 50px;
+  left: 900px;
+  top: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+.dot5 {
+  height: 75px;
+  width: 75px;
+  left: 700px;
+  top: 370px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+.dot6 {
+  height: 150px;
+  width: 150px;
+  left: 950px;
+  top: 550px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+.dot7 {
+  height: 50px;
+  width: 50px;
+  left: 1200px;
+  top: 280px;
+  background-color: yellow;
+  border-radius: 50%;
+   position: absolute;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes op {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+    60% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes op2 {
+    0% { opacity: 1; }
+    20% { opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes here {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes move {
+    0% { opacity: 0; left: 350px; color: black; }
+    10% { opacity: 0.1;}
+    80% { opacity: 1;}
+    100% { left: 250px; color: white; }
+}
+
+@keyframes move2 {
+    0% { opacity: 0; left: 350px; color: black; }
+    10% { opacity: 0.1;}
+    80% { opacity: 1;}
+    100% { left: 1200px; color: white; }
+}
+
+@keyframes move3 {
+    0% { opacity: 0; left: 350px; color: black; }
+    10% { opacity: 0.1;}
+    80% { opacity: 1;}
+    100% { left: 700px; color: white; }
+}
+
+.new2 {
+    animation: here 7s forwards;
+    animation: move2 3s forwards;
+    animation-delay: 2s;
+}
+
+.new3 {
+    animation: here 9s forwards; 
+    animation: move 3s forwards;
+    animation-delay: 2s;
+}
+
+.new4 {
+    animation: here 8s forwards;
+    animation: move3 3s forwards;
+    animation-delay: 2s;
+}
+
+.new1 {
+    animation: here 0.5s forwards; 
+}
+
+.opac1 {
+    animation: op 3s infinite;
+}
+
+.opac2 {
+    animation: op2 3s infinite;
+}
